@@ -77,7 +77,7 @@ install_dependencies() {
             ["endeavouros"]="pacman -S --noconfirm --needed ipset "
             ["manjaro"]="pacman -S --noconfirm --needed ipset "
             ["debian"]="apt-get install -y iptables ipset "
-            ["fedora"]="dnf install -y iptables ipset"
+#            ["fedora"]="dnf install -y iptables ipset"
             ["ubuntu"]="apt-get install -y iptables ipset"
             ["mint"]="apt-get install -y iptables ipset"
             ["centos"]="yum install -y ipset iptables"
