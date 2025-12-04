@@ -132,7 +132,7 @@ install_zapret() {
     download_zapret
     cd /opt/zapret
     sed -i '238s/ask_yes_no N/ask_yes_no Y/' /opt/zapret/common/installer.sh
-    yes "" | ./install_easy.sh
+    yes "" | sh -c "$(cat ./install_easy.sh)"
     sed -i '238s/ask_yes_no Y/ask_yes_no N/' /opt/zapret/common/installer.sh
     rm -f /bin/zapret
     rm -f /opt/zapret/config
